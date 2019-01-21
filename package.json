@@ -7,7 +7,7 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "d3": "4.13.0",
+    "d3": "5.7.0",
     "dva": "^2.4.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
