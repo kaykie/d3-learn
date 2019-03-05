@@ -94,7 +94,7 @@ class IndexPage extends React.Component {
     //   .attr('cx',200)
     const alphabet = 'abcdefghigklmnopqrstuvwxyz'.split('');
     let mySvg = d3.select('.container').append('svg').attr('width', '960').attr('height', '500'),
-      width = +mySvg.attr('width'), height = +mySvg.attr('height'),
+      height = +mySvg.attr('height'),
       g = mySvg.append('g').attr('transform', 'translate(32,' + height / 2 + ')');
     upadte(alphabet, g);
     d3.interval(()=>{
@@ -103,8 +103,8 @@ class IndexPage extends React.Component {
         ).sort()
         ,g
       )
-    },1500)
-    console.log(width)
+    },1500);
+    // console.log(width)
   }
 
   render() {

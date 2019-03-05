@@ -5,6 +5,7 @@ import Selection from './routes/selection'
 import Layout from './components/Layout'
 import Line from './routes/line'
 import Graph from './routes/graphGenerator'
+import SimpleChart from './routes/simpleChart'
 
 function RouterConfig({ history }) {
   return (
@@ -15,6 +16,7 @@ function RouterConfig({ history }) {
           <Route path="/selection" exact component={Selection} />
           <Route path="/line" exact component={Line} />
           <Route path="/graph" exact component={Graph} />
+          <Route path="/simpleChart" exact component={SimpleChart} />
         </Switch>
       </Layout>
 

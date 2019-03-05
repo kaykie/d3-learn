@@ -39,7 +39,7 @@ class Graph extends Component {
       {source: 'Kodak', target: 'RIM', type: 'suit'},
       {source: 'Nokia', target: 'Qualcomm', type: 'suit'}
     ]
-  }
+  };
 
   componentDidMount() {
     let nodes = {};
@@ -126,7 +126,7 @@ class Graph extends Component {
     const forceLink = d3.forceLink(this.state.links) // 创建一个弹簧作用力
       .distance(80)
       .strength(0.2)
-      .iterations(3)
+      .iterations(3);
 
     d3.forceSimulation(d3.values(nodes))
       .force('charge',d3.forceManyBody().strength(50)) // 创建一个电荷作用力模型.
@@ -201,7 +201,7 @@ class Graph extends Component {
       .append('circle')
       .attr('r', 10)
       .style('cursor', 'pointer')
-      .attr('transform', d => `translate(${d.x},${d.y})`)
+      .attr('transform', d => `translate(${d.x},${d.y})`);
 
     // 每个圆圈下面的标题
     sampleContainer.selectAll('.title')
