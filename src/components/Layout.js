@@ -17,6 +17,10 @@ class Layout extends Component{
         <Link to="/line" replace>柱状图</Link>
         <Link to="/graph" replace>关系图</Link>
         <Link to="/simpleChart" replace>简单图表</Link>
+        <Link to="/scale" replace>理解比例尺</Link>
+        <Link to="/axis" replace>坐标轴</Link>
+        <Link to="/dynamicLine" replace>动态柱状图</Link>
+        <Link to="/pie" replace>饼状图</Link>
         <div>
           {this.props.children}
         </div>

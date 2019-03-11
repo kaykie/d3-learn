@@ -47,7 +47,7 @@ class Line extends Component {
     svg.append('g')
       .attr('class', 'axis')
       .attr('transform', 'translate(0,0)')
-      .call(yAxis)
+      .call(yAxis);
 
 
     let xData = data.map(d => d.x);

@@ -16,6 +16,8 @@ class SimpleChart extends Component{
       .append('rect')
       .attr('x',20)
       .attr('y',(d,i)=>i*30)
+      .attr('rx','5')
+      .attr('ry','5')
       .attr('width',d => d)
       .attr('height',20)
       .style('fill','blue')

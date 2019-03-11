@@ -6,6 +6,10 @@ import Layout from './components/Layout'
 import Line from './routes/line'
 import Graph from './routes/graphGenerator'
 import SimpleChart from './routes/simpleChart'
+import Scale from './routes/scale'
+import Axis from './routes/axis'
+import DynamicLine from './routes/dynamicLine'
+import Pie from './routes/pie'
 
 function RouterConfig({ history }) {
   return (
@@ -17,6 +21,10 @@ function RouterConfig({ history }) {
           <Route path="/line" exact component={Line} />
           <Route path="/graph" exact component={Graph} />
           <Route path="/simpleChart" exact component={SimpleChart} />
+          <Route path="/scale" exact component={Scale} />
+          <Route path="/axis" exact component={Axis} />
+          <Route path="/dynamicLine" exact component={DynamicLine} />
+          <Route path="/pie" exact component={Pie} />
         </Switch>
       </Layout>
 
