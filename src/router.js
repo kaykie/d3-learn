@@ -10,6 +10,7 @@ import Scale from './routes/scale'
 import Axis from './routes/axis'
 import DynamicLine from './routes/dynamicLine'
 import Pie from './routes/pie'
+import Force from './routes/force'
 
 function RouterConfig({ history }) {
   return (
@@ -25,6 +26,7 @@ function RouterConfig({ history }) {
           <Route path="/axis" exact component={Axis} />
           <Route path="/dynamicLine" exact component={DynamicLine} />
           <Route path="/pie" exact component={Pie} />
+          <Route path="/force" exact component={Force} />
         </Switch>
       </Layout>
 

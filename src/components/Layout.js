@@ -21,6 +21,7 @@ class Layout extends Component{
         <Link to="/axis" replace>坐标轴</Link>
         <Link to="/dynamicLine" replace>动态柱状图</Link>
         <Link to="/pie" replace>饼状图</Link>
+        <Link to="/force" replace>力导向图</Link>
         <div>
           {this.props.children}
         </div>
