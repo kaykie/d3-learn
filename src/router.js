@@ -11,6 +11,7 @@ import Axis from './routes/axis'
 import DynamicLine from './routes/dynamicLine'
 import Pie from './routes/pie'
 import Force from './routes/force'
+import Tree from './routes/tree'
 
 function RouterConfig({ history }) {
   return (
@@ -27,6 +28,7 @@ function RouterConfig({ history }) {
           <Route path="/dynamicLine" exact component={DynamicLine} />
           <Route path="/pie" exact component={Pie} />
           <Route path="/force" exact component={Force} />
+          <Route path="/tree" exact component={Tree} />
         </Switch>
       </Layout>
 
